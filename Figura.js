@@ -12,19 +12,6 @@
   }
 }
 
-class Cuadrado extends Figura {
-  constructor(nombre, cantidadLados, lado1) {
-    super(nombre, cantidadLados);
-    this.lado1 = lado1;
-  }
-}
-class Rectangulo extends Figura {
-  constructor(nombre, cantidadLados, lado1, lado2) {
-    super(nombre, cantidadLados);
-    this.lado1 = lado1;
-    this.lado2 = lado2;
-  }
-}
 class Pentagono extends Figura {
   constructor(nombre, cantidadLados, lado1, lado2, lado3, lado4, lado5) {
     super(nombre, cantidadLados);

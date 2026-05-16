@@ -28,7 +28,26 @@ export class TrianguloIsosceles extends Figura {
     return `El area del Triangulo Isosceles es: ${a}`;
   }
   perimetro() {
-    let p = this.lado1 *2 + this.base;
+    let p = this.lado1 * 2 + this.base;
+    return `El perímetro del Triangulo Isosceles es: ${p}`;
+  }
+}
+
+export class TrianguloRectangulo extends Figura {
+  constructor(lado1, base, altura) {
+    super("Triangulo isosceles", 3);
+    this.lado1 = lado1;
+    this.lado1 = lado1;
+    this.base = base;
+    this.altura = altura;
+  }
+
+  area() {
+    let a = (this.base * this.altura) / 2;
+    return `El area del Triangulo Isosceles es: ${a}`;
+  }
+  perimetro() {
+    let p = this.lado1 + this.altura + this.base;
     return `El perímetro del Triangulo Isosceles es: ${p}`;
   }
 }
